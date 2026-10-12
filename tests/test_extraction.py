@@ -111,3 +111,15 @@ def test_compare_passes_flags_differences():
 def test_duplicate_page_warning():
     p = _pages(1)[0]
     assert duplicate_pages([p, p])
+
+
+def test_eval_scoring_counts_exact_rows_and_illegible_recall():
+    from eval_extraction import score
+    from tests import synthetic
+    truth = parse_extraction(synthetic.register_json_text(), "t", "h", "T")
+    pred = truth.model_copy(deep=True)
+    first = next(iter(pred.rows[0]))
+    pred.rows[0][first].text = "999"
+    r = score([truth], [pred])
+    assert r["rows"] == 8 and r["rows_exact"] == 7
+    assert r["illegible_cells"] == 1 and r["illegible_flagged"] == 1
