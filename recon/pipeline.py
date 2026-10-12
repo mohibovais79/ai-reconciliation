@@ -32,6 +32,7 @@ class RunResult:
     pages: list[PageResult] = field(default_factory=list)
     contexts: dict[str, SourceContext] = field(default_factory=dict)
     stale_decisions: int = 0
+    period: str = ""
 
     @property
     def complete(self) -> bool:
@@ -84,9 +85,15 @@ def reconcile(tables: dict[str, Table], mappings: dict[str, dict[str, str | None
               for s, t in tables.items()]
     status = run_status(pages, proof.ok, sum(1 for i in queue if i.blocking))
     run = RunResult(uuid.uuid4().hex[:12], status, rows, dropped, ledger, mr, proof, queue,
-                    inputs, pages, ctxs, stale)
+                    inputs, pages, ctxs, stale, _period(tables, period_year))
     store.record_run(run.run_id, status, {"rows": len(rows), "awaiting": run.awaiting})
     return run
+
+
+def _period(tables: dict[str, Table], period_year: int | None) -> str:
+    """Period label as written on the register, else the user-set year."""
+    labels = [p for t in tables.values() for p in t.meta.get("periods", []) if p]
+    return labels[0] if labels else (str(period_year) if period_year else "")
 
 
 def _queue(rows: list[SourceRow], mr: MatchResult, pages: list[PageResult],
