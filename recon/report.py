@@ -261,10 +261,24 @@ def _exception_lines(run: RunResult, settings: Settings) -> list[str]:
     return lines
 
 
+def _pending_proposal(g) -> bool:
+    """Group whose rows are proposed as part of another receipt (awaiting confirmation)."""
+    return any(f.type == "FUZZY_MATCH_PROPOSAL" and not f.resolved
+               for rs in g.members.values() for r in rs for f in r.flags)
+
+
+def _settled_groups(run: RunResult) -> list:
+    """Groups missing from a source with no match proposal or other doubt outstanding."""
+    doubtful = {e.group_id for e in run.ledger if e.outcome == Outcome.NEEDS_REVIEW}
+    return [g for g in run.match.groups
+            if len(g.sources) < len(run.inputs) and not g.proposals
+            and not _pending_proposal(g) and g.group_id not in doubtful]
+
+
 def summary_text(run: RunResult, settings: Settings, report_name: str) -> str:
     """<= ~12 lines: status, exceptions first, counts, proof line."""
     labels = settings.sources.labels
-    n_receipts = sum(1 for g in run.match.groups if g.sources)
+    n_receipts = sum(1 for g in run.match.groups if g.sources and not _pending_proposal(g))
     head = (f"Receiving reconciliation{', ' + run.period if run.period else ''}: "
             f"{len(run.inputs)} sources, {n_receipts} receipts. {run.status}")
     exc = _exception_lines(run, settings)
@@ -274,14 +288,11 @@ def summary_text(run: RunResult, settings: Settings, report_name: str) -> str:
         lines.append(f"- ...and {len(exc) - k} more in the report")
     if not exc:
         lines[-1] = "NEEDS ACTION: none"
-    miss = Counter(s for e in run.ledger if e.outcome == Outcome.MISSING for s in e.missing_from)
-    groups_missing = Counter(s for g in run.match.groups for s in
-                             [i.source for i in run.inputs if i.source not in g.sources]
-                             if any(e.group_id == g.group_id and e.outcome == Outcome.MISSING
-                                    for e in run.ledger))
-    if miss:
-        lines.append("MISSING: " + ", ".join(f"{groups_missing[s]} missing from {labels.get(s, s)}"
-                                             for s in groups_missing))
+    groups_missing = Counter(s for g in _settled_groups(run) for s in
+                             [i.source for i in run.inputs if i.source not in g.sources])
+    if groups_missing:
+        lines.append("MISSING: " + ", ".join(f"{n} missing from {labels.get(s, s)}"
+                                             for s, n in groups_missing.items()))
     other = Counter(e.outcome for e in run.ledger)
     if other.get(Outcome.DUPLICATE_EXTRA) or other.get(Outcome.NON_RECEIPT):
         lines.append(f"DUPLICATES: {other.get(Outcome.DUPLICATE_EXTRA, 0)}, "

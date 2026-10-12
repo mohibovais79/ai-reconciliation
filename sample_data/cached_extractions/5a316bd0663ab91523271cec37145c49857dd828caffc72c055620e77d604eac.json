@@ -1,0 +1,745 @@
+{
+ "created_at": "synthetic fixture",
+ "pass_a": {
+  "page_label": "1",
+  "period_label": "March 2026",
+  "columns": [
+   "Receipt #",
+   "Dt",
+   "Supplier",
+   "Item",
+   "Batch",
+   "Qty",
+   "Unit"
+  ],
+  "rows": [
+   {
+    "Receipt #": {
+     "text": "101",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "3/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Northwind Foods Ltd",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Rice Flour",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7731",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "40",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bag",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "102",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "5/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Contoso Chemicals Inc",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Citric Acid",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7732",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "25",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "kg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "103",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "7/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Fabrikam Plastics",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "PET Preform 28mm",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7733",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "1200",
+     "legibility": "clear",
+     "struck_text": "1100",
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "104",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "13/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Northwind Foods Ltd",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Corn Starch",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7734",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "30",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bag",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "105",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "15/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Contoso Chemicals Inc",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Sodium Benzoate",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7735",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "10",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "kg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "106",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "18/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Fabrikam Plastics",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "HDPE Caps",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7736",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "5",
+     "legibility": "illegible",
+     "struck_text": null,
+     "note": "ink blot"
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "107",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "21/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Litware Packaging",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Shrink Film",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7737",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "120",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "kg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "108",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "24/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Litware Packaging",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Carton 5-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7738",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "300",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   }
+  ],
+  "rows_visible": 8,
+  "provider": "fixture",
+  "model": "synthetic",
+  "pass_id": "A"
+ },
+ "pass_b": {
+  "page_label": "1",
+  "period_label": "March 2026",
+  "columns": [
+   "Receipt #",
+   "Dt",
+   "Supplier",
+   "Item",
+   "Batch",
+   "Qty",
+   "Unit"
+  ],
+  "rows": [
+   {
+    "Receipt #": {
+     "text": "101",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "3/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Northwind Foods Ltd",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Rice Flour",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7731",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "40",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bag",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "102",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "5/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Contoso Chemicals Inc",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Citric Acid",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7732",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "25",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "kg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "103",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "7/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Fabrikam Plastics",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "PET Preform 28mm",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7733",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "1200",
+     "legibility": "clear",
+     "struck_text": "1100",
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "104",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "13/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Northwind Foods Ltd",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Corn Starch",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7734",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "30",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bag",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "105",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "15/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Contoso Chemicals Inc",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Sodium Benzoate",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7735",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "10",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "kg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "106",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "18/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Fabrikam Plastics",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "HDPE Caps",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7736",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "5",
+     "legibility": "illegible",
+     "struck_text": null,
+     "note": "ink blot"
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "107",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "21/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Litware Packaging",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Shrink Film",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7737",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "120",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "kg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Receipt #": {
+     "text": "108",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Dt": {
+     "text": "24/3",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Litware Packaging",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item": {
+     "text": "Carton 5-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Batch": {
+     "text": "B-7738",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "300",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   }
+  ],
+  "rows_visible": 8,
+  "provider": "fixture",
+  "model": "synthetic",
+  "pass_id": "B"
+ }
+}
