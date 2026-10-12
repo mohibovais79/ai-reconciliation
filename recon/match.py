@@ -181,30 +181,34 @@ def _split_duplicates(groups) -> set[str]:
 
 def _propose(groups: dict[str, Group], s: Settings, rejected: set[tuple[str, str]]) -> None:
     """Single-source groups get a FUZZY_MATCH_PROPOSAL if a strong unique candidate exists."""
-    singles = [g for g in groups.values() if len(g.sources) == 1]
+    singles = sorted((g for g in groups.values() if len(g.sources) == 1),
+                     key=lambda g: g.tier, reverse=True)       # unkeyed rows propose first
+    proposed: set[frozenset[str]] = set()
     for g in singles:
         src = g.sources[0]
         r = g.primary(src)
-        cands = []
-        for other in groups.values():
-            if other is g or src in other.sources or (r.row_id, other.group_id) in rejected:
-                continue
-            cands.append((pair_score(r, other, s), other))
-        cands.sort(key=lambda x: -x[0])
+        cands = sorted(((pair_score(r, o, s), o) for o in groups.values()
+                        if o is not g and src not in o.sources
+                        and (r.row_id, o.group_id) not in rejected),
+                       key=lambda x: -x[0])
         if not cands:
             continue
         best, target = cands[0]
         runner = cands[1][0] if len(cands) > 1 else 0.0
-        if best >= s.matching.tier2_min_score and best - runner >= s.matching.tier2_margin:
-            if target.key and r.key and is_transposition(r.key, target.key):
-                g.hints.append(f"TRANSPOSITION_HINT: key {r.key} vs {target.key}")
-            for x in g.members[src]:
-                x.flags.append(Flag(
-                    type=FlagType.FUZZY_MATCH_PROPOSAL, candidates=[target.group_id],
-                    suggestion=target.group_id,
-                    message=f"looks like the same receipt as {_label(target)} "
-                            f"(score {best:.2f}); confirm?"))
-            target.proposals.append(r.row_id)
+        pair = frozenset((g.group_id, target.group_id))
+        if pair in proposed or best < s.matching.tier2_min_score \
+                or best - runner < s.matching.tier2_margin:
+            continue
+        proposed.add(pair)
+        if target.key and r.key and is_transposition(r.key, target.key):
+            g.hints.append(f"TRANSPOSITION_HINT: key {r.key} vs {target.key}")
+        for x in g.members[src]:
+            x.flags.append(Flag(
+                type=FlagType.FUZZY_MATCH_PROPOSAL, candidates=[target.group_id],
+                suggestion=target.group_id, score=round(best, 2),
+                message=f"looks like the same receipt as {_label(target)} "
+                        f"(score {best:.2f}); confirm?"))
+        target.proposals.append(r.row_id)
 
 
 def _label(g: Group) -> str:

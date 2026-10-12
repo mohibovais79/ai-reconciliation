@@ -95,6 +95,12 @@ class Store:
         )
         self.conn.commit()
 
+    def decisions_for_row(self, row_id: str) -> list[dict]:
+        """Decisions recorded against a row id (validated by fingerprint by the caller)."""
+        cur = self.conn.execute("SELECT * FROM decisions WHERE row_id=?", (row_id,))
+        names = [c[0] for c in cur.description]
+        return [dict(zip(names, r, strict=True)) for r in cur.fetchall()]
+
     def all_decisions(self) -> list[dict]:
         """All decisions, newest first (audit log)."""
         cur = self.conn.execute("SELECT * FROM decisions ORDER BY decided_at DESC")

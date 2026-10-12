@@ -73,6 +73,7 @@ class Flag(BaseModel):
     candidates: list[str] = []          # e.g. row_ids for a proposed match
     blocking: bool = True
     resolved: bool = False
+    score: float | None = None          # Tier-2 match score, when relevant
 
 
 class Outcome(StrEnum):
