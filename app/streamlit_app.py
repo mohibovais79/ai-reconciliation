@@ -65,15 +65,20 @@ def settings():
     return load_settings(overrides={"matching": {"source_of_truth": SS.get("sot", "none")}})
 
 
+def data_dir() -> Path:
+    """Data folder: RECON_DATA_DIR if set (tests, hosting), else config app.data_dir."""
+    return Path(os.environ.get("RECON_DATA_DIR") or ROOT / load_settings().app.data_dir)
+
+
 def store() -> Store:
     """SQLite store (cache, decisions, mappings). Holds no keys."""
-    return Store(ROOT / load_settings().app.data_dir / "recon.sqlite")
+    return Store(data_dir() / "recon.sqlite")
 
 
 def session_dir() -> Path:
     """Per-session folder for processed page images."""
     SS.setdefault("sid", uuid.uuid4().hex[:12])
-    return ROOT / load_settings().app.data_dir / "session" / SS.sid
+    return data_dir() / "session" / SS.sid
 
 
 def demo_key(provider: str) -> str:

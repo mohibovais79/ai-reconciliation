@@ -24,7 +24,8 @@ DEMO = ROOT / "sample_data" / "synthetic"
 SENTINEL = "SENTINEL-KEY-123"
 
 
-def test_app_offline_happy_path():
+def test_app_offline_happy_path(tmp_path, monkeypatch):
+    monkeypatch.setenv("RECON_DATA_DIR", str(tmp_path))
     at = AppTest.from_file(str(ROOT / "app" / "streamlit_app.py"), default_timeout=60)
     at.run()
     assert not at.exception
