@@ -1,0 +1,136 @@
+# All dataset-specific knowledge lives here (or in user decisions in SQLite), never in code.
+
+[app]
+data_dir = ".data"
+max_file_mb = 10
+max_pages = 30
+demo_page_cap = 6          # pages per session allowed on shared demo keys
+image_max_side = 2000
+jpeg_quality = 85
+
+[providers]
+default = "gemini"
+timeout_s = 120
+max_attempts = 4
+backoff_base_s = 1.5
+backoff_max_s = 30
+
+# Model IDs are starting points; free-tier availability changes. Editable in the UI.
+[providers.gemini]
+model = "gemini-2.5-flash"
+base_url = "https://generativelanguage.googleapis.com/v1beta"
+demo_env = "DEMO_GEMINI_API_KEY"
+
+[providers.openrouter]
+model = "qwen/qwen2.5-vl-72b-instruct:free"
+base_url = "https://openrouter.ai/api/v1"
+demo_env = "DEMO_OPENROUTER_API_KEY"
+
+[providers.groq]
+model = "meta-llama/llama-4-scout-17b-16e-instruct"
+base_url = "https://api.groq.com/openai/v1"
+demo_env = "DEMO_GROQ_API_KEY"
+
+[extraction]
+prompt_version = "v1"
+verification = "second_pass"   # off | second_pass | second_provider
+
+[sources]
+order = ["REG", "ERP", "STORE"]
+[sources.labels]
+REG = "Register"
+ERP = "ERP"
+STORE = "Store sheet"
+[sources.owners]
+REG = "Receiving clerk (register)"
+ERP = "ERP clerk"
+STORE = "Storekeeper"
+
+[matching]
+source_of_truth = "none"       # none | REG | ERP | STORE
+compare_fields = ["date", "supplier", "item", "lot", "qty"]
+supplier_threshold = 85        # rapidfuzz token_set_ratio
+item_threshold = 85
+tier2_min_score = 0.75         # strong candidate threshold (0..1)
+tier2_margin = 0.15            # must beat the runner-up by this much
+tier2_date_window_days = 2
+
+[tolerances]
+qty_abs = "0.01"               # after unit conversion
+qty_rel = "0"                  # e.g. "0.02" for +-2%
+date_days = 0
+
+[thresholds]
+late_entry_days = 3            # entered_at more than N days after document date -> suspect
+
+[dates]
+default_dayfirst = false       # used only when a column's order is undecidable
+
+[normalize]
+legal_suffixes = ["pvt", "private", "ltd", "limited", "inc", "llc", "llp", "co", "corp",
+                  "corporation", "company", "plc", "gmbh", "sa", "and", "&"]
+ocr_confusions = [["0", "o"], ["1", "l"], ["5", "s"]]
+
+# canonical unit -> aliases (case-insensitive, compared after stripping dots)
+[units.aliases]
+pcs = ["pcs", "pc", "piece", "pieces", "nos", "no", "unit", "units", "ea", "each"]
+bag = ["bag", "bags"]
+ctn = ["ctn", "ctns", "carton", "cartons", "cs", "case", "cases"]
+box = ["box", "boxes", "bx"]
+roll = ["roll", "rolls"]
+cone = ["cone", "cones"]
+m = ["m", "mtr", "mtrs", "meter", "meters", "metre", "metres"]
+yd = ["yd", "yds", "yard", "yards"]
+ft = ["ft", "feet", "foot"]
+kg = ["kg", "kgs", "kilo", "kilos", "kilogram", "kilograms"]
+g = ["g", "gm", "gms", "gram", "grams"]
+lb = ["lb", "lbs", "pound", "pounds"]
+l = ["l", "ltr", "ltrs", "litre", "litres", "liter", "liters"]
+ml = ["ml"]
+
+# Safe conversions only: qty_in_to = qty_in_from * factor. Units without a path are incomparable.
+[[units.conversions]]
+from = "yd"
+to = "m"
+factor = "0.9144"
+[[units.conversions]]
+from = "ft"
+to = "m"
+factor = "0.3048"
+[[units.conversions]]
+from = "lb"
+to = "kg"
+factor = "0.45359237"
+[[units.conversions]]
+from = "g"
+to = "kg"
+factor = "0.001"
+[[units.conversions]]
+from = "ml"
+to = "l"
+factor = "0.001"
+
+# Header synonyms for auto column mapping (fuzzy-matched, case-insensitive).
+[mapping.synonyms]
+key = ["grn", "grn no", "grn number", "grn #", "receipt no", "receipt number", "receipt id",
+       "doc no", "document no", "voucher no", "mrn", "inward no", "gate entry no", "ref no"]
+date = ["date", "grn date", "receipt date", "received date", "date received", "doc date",
+        "inward date", "receiving date"]
+supplier = ["supplier", "supplier name", "vendor", "vendor name", "party", "party name", "from"]
+item = ["item", "item name", "item description", "description", "material", "material name",
+        "product", "particulars", "goods"]
+lot = ["lot", "lot no", "lot number", "batch", "batch no", "batch number"]
+qty = ["qty", "quantity", "received qty", "qty received", "rcvd qty", "recd qty", "qty rcvd",
+       "net qty", "quantity received"]
+unit = ["unit", "uom", "units", "unit of measure"]
+entered_by = ["entered by", "created by", "user", "posted by", "keyed by", "recorded by"]
+entered_at = ["entered at", "created at", "entry date", "posted on", "created on", "timestamp",
+              "entry time", "posting date"]
+remarks = ["remarks", "remark", "notes", "note", "comments", "comment"]
+
+[mapping]
+required = ["qty"]
+header_min_score = 80
+
+[report]
+summary_max_items = 6
