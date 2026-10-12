@@ -169,3 +169,4 @@ class PageResult(BaseModel):
     extraction: RegisterPageExtraction | None = None
     verify: RegisterPageExtraction | None = None
     flags_by_row: dict[int, list[Flag]] = Field(default_factory=dict)
+    page_flags: list[Flag] = Field(default_factory=list)
