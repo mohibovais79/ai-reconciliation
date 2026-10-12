@@ -1,0 +1,769 @@
+{
+ "pages": [
+  {
+   "page_label": "1",
+   "period_label": "Sep 2026",
+   "columns": [
+    "Date",
+    "GRN No.",
+    "Supplier",
+    "Item / Description",
+    "Lot No.",
+    "Qty",
+    "Unit",
+    "Recd by"
+   ],
+   "rows_visible": 14,
+   "rows": [
+    {
+     "Date": {
+      "text": "01/09"
+     },
+     "GRN No.": {
+      "text": "4401"
+     },
+     "Supplier": {
+      "text": "Qasr Pkg"
+     },
+     "Item / Description": {
+      "text": "Cartons 5-ply"
+     },
+     "Lot No.": {
+      "text": "L2609-001"
+     },
+     "Qty": {
+      "text": "2000"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "01/09"
+     },
+     "GRN No.": {
+      "text": "4402"
+     },
+     "Supplier": {
+      "text": "Taraz Poly"
+     },
+     "Item / Description": {
+      "text": "Polybags 12x16"
+     },
+     "Lot No.": {
+      "text": "L2609-002"
+     },
+     "Qty": {
+      "text": "25000"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "02/09"
+     },
+     "GRN No.": {
+      "text": "4403"
+     },
+     "Supplier": {
+      "text": "Zarnab Chem"
+     },
+     "Item / Description": {
+      "text": "Caustic soda flakes"
+     },
+     "Lot No.": {
+      "text": "L2609-003"
+     },
+     "Qty": {
+      "text": "50"
+     },
+     "Unit": {
+      "text": "bags"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "03/09"
+     },
+     "GRN No.": {
+      "text": "4404"
+     },
+     "Supplier": {
+      "text": "Rehbar Threads"
+     },
+     "Item / Description": {
+      "text": "Thread cones 40/2"
+     },
+     "Lot No.": {
+      "text": "L2609-004"
+     },
+     "Qty": {
+      "text": "600"
+     },
+     "Unit": {
+      "text": "cones"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "04/09"
+     },
+     "GRN No.": {
+      "text": "4405"
+     },
+     "Supplier": {
+      "text": "Saahil Pallets"
+     },
+     "Item / Description": {
+      "text": "Wooden pallets"
+     },
+     "Lot No.": {
+      "text": "L2609-005"
+     },
+     "Qty": {
+      "text": "120"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "05/09"
+     },
+     "GRN No.": {
+      "text": "4406"
+     },
+     "Supplier": {
+      "text": "Nayab Labels"
+     },
+     "Item / Description": {
+      "text": "Woven labels"
+     },
+     "Lot No.": {
+      "text": "L2609-006"
+     },
+     "Qty": {
+      "text": "10000"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "07/09"
+     },
+     "GRN No.": {
+      "text": "4407"
+     },
+     "Supplier": {
+      "text": "Qasr Pkg"
+     },
+     "Item / Description": {
+      "text": "Cartons 3-ply"
+     },
+     "Lot No.": {
+      "text": "L2609-007"
+     },
+     "Qty": {
+      "text": "1500"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "07/09"
+     },
+     "GRN No.": {
+      "text": "4408"
+     },
+     "Supplier": {
+      "text": "Zarnab Chem"
+     },
+     "Item / Description": {
+      "text": "H2O2 50%"
+     },
+     "Lot No.": {
+      "text": "L2609-008"
+     },
+     "Qty": {
+      "text": "40"
+     },
+     "Unit": {
+      "text": "drums"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "08/09"
+     },
+     "GRN No.": {
+      "text": "4409"
+     },
+     "Supplier": {
+      "text": "Taraz Poly"
+     },
+     "Item / Description": {
+      "text": "Stretch film"
+     },
+     "Lot No.": {
+      "text": "L2609-009"
+     },
+     "Qty": {
+      "text": "80"
+     },
+     "Unit": {
+      "text": "rolls"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "09/09"
+     },
+     "GRN No.": {
+      "text": "4410"
+     },
+     "Supplier": {
+      "text": "Rehbar Threads"
+     },
+     "Item / Description": {
+      "text": "Thread cones 20/2"
+     },
+     "Lot No.": {
+      "text": "L2609-010"
+     },
+     "Qty": {
+      "text": "450"
+     },
+     "Unit": {
+      "text": "cones"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "10/09"
+     },
+     "GRN No.": {
+      "text": "4411"
+     },
+     "Supplier": {
+      "text": "Qasr Pkg"
+     },
+     "Item / Description": {
+      "text": "Cartons 5-ply"
+     },
+     "Lot No.": {
+      "text": "L2609-011"
+     },
+     "Qty": {
+      "text": "1800"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "11/09"
+     },
+     "GRN No.": {
+      "text": "4412"
+     },
+     "Supplier": {
+      "text": "Saahil Pallets"
+     },
+     "Item / Description": {
+      "text": "Wooden pallets"
+     },
+     "Lot No.": {
+      "text": "L2609-012"
+     },
+     "Qty": {
+      "text": "90"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "11/09"
+     },
+     "GRN No.": {
+      "text": "4413"
+     },
+     "Supplier": {
+      "text": "Nayab Labels"
+     },
+     "Item / Description": {
+      "text": "Care labels"
+     },
+     "Lot No.": {
+      "text": "L2609-013"
+     },
+     "Qty": {
+      "text": "15000"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "12/09"
+     },
+     "GRN No.": {
+      "text": "4414"
+     },
+     "Supplier": {
+      "text": "Zarnab Chem"
+     },
+     "Item / Description": {
+      "text": "Soda ash"
+     },
+     "Lot No.": {
+      "text": "L2609-014"
+     },
+     "Qty": {
+      "text": "30"
+     },
+     "Unit": {
+      "text": "bags"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    }
+   ]
+  },
+  {
+   "page_label": "2",
+   "period_label": "Sep 2026",
+   "columns": [
+    "Date",
+    "GRN No.",
+    "Supplier",
+    "Item / Description",
+    "Lot No.",
+    "Qty",
+    "Unit",
+    "Recd by"
+   ],
+   "rows_visible": 14,
+   "rows": [
+    {
+     "Date": {
+      "text": "12/09"
+     },
+     "GRN No.": {
+      "text": "4415"
+     },
+     "Supplier": {
+      "text": "Taraz Poly"
+     },
+     "Item / Description": {
+      "text": "Polybags 10x14"
+     },
+     "Lot No.": {
+      "text": "L2609-115"
+     },
+     "Qty": {
+      "text": "30000"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "14/09"
+     },
+     "GRN No.": {
+      "text": "4416"
+     },
+     "Supplier": {
+      "text": "Qasr Pkg"
+     },
+     "Item / Description": {
+      "text": "Cartons 5-ply"
+     },
+     "Lot No.": {
+      "text": "L2609-116"
+     },
+     "Qty": {
+      "text": "2200"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "15/09"
+     },
+     "GRN No.": {
+      "text": "4417"
+     },
+     "Supplier": {
+      "text": "Rehbar Threads"
+     },
+     "Item / Description": {
+      "text": "Thread cones 40/2"
+     },
+     "Lot No.": {
+      "text": "L2609-117"
+     },
+     "Qty": {
+      "text": "48"
+     },
+     "Unit": {
+      "text": "ctns"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "16/09"
+     },
+     "GRN No.": {
+      "text": "4418"
+     },
+     "Supplier": {
+      "text": "Saahil Pallets"
+     },
+     "Item / Description": {
+      "text": "Wooden pallets"
+     },
+     "Lot No.": {
+      "text": "L2609-118"
+     },
+     "Qty": {
+      "text": "100"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "17/09"
+     },
+     "GRN No.": {
+      "text": "4419"
+     },
+     "Supplier": {
+      "text": "Zarnab Chem"
+     },
+     "Item / Description": {
+      "text": "H2O2 50%"
+     },
+     "Lot No.": {
+      "text": "L2609-119"
+     },
+     "Qty": {
+      "text": "66",
+      "struck_text": "60"
+     },
+     "Unit": {
+      "text": "drums"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "18/09"
+     },
+     "GRN No.": {
+      "text": "4420"
+     },
+     "Supplier": {
+      "text": "Nayab Labels"
+     },
+     "Item / Description": {
+      "text": "Woven labels"
+     },
+     "Lot No.": {
+      "text": "L2609-120"
+     },
+     "Qty": {
+      "text": "12000"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "19/09"
+     },
+     "GRN No.": {
+      "text": "4421"
+     },
+     "Supplier": {
+      "text": "Taraz Poly"
+     },
+     "Item / Description": {
+      "text": "Stretch film"
+     },
+     "Lot No.": {
+      "text": "L2609-121"
+     },
+     "Qty": {
+      "text": "75"
+     },
+     "Unit": {
+      "text": "rolls"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "21/09"
+     },
+     "GRN No.": {
+      "text": "4422"
+     },
+     "Supplier": {
+      "text": "Rehbar Threads"
+     },
+     "Item / Description": {
+      "text": "Thread cones 20/2"
+     },
+     "Lot No.": {
+      "text": "L2609-122"
+     },
+     "Qty": {
+      "text": "500"
+     },
+     "Unit": {
+      "text": "cones"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "22/09"
+     },
+     "GRN No.": {
+      "text": "4423"
+     },
+     "Supplier": {
+      "text": "Qasr Pkg"
+     },
+     "Item / Description": {
+      "text": "Cartons 3-ply"
+     },
+     "Lot No.": {
+      "text": "L2609-123"
+     },
+     "Qty": {
+      "text": "1600"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "23/09"
+     },
+     "GRN No.": {
+      "text": "4424"
+     },
+     "Supplier": {
+      "text": "Zarnab Chem"
+     },
+     "Item / Description": {
+      "text": "Caustic soda flakes"
+     },
+     "Lot No.": {
+      "text": "L2609-124"
+     },
+     "Qty": {
+      "text": "45"
+     },
+     "Unit": {
+      "text": "bags"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "24/09"
+     },
+     "GRN No.": {
+      "text": "4425"
+     },
+     "Supplier": {
+      "text": "Shahtoot Weaving"
+     },
+     "Item / Description": {
+      "text": "Grey fabric 63\""
+     },
+     "Lot No.": {
+      "text": "L2609-125"
+     },
+     "Qty": {
+      "text": "1200"
+     },
+     "Unit": {
+      "text": "yds"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "25/09"
+     },
+     "GRN No.": {
+      "text": "4426"
+     },
+     "Supplier": {
+      "text": "Saahil Pallets"
+     },
+     "Item / Description": {
+      "text": "Wooden pallets"
+     },
+     "Lot No.": {
+      "text": "L2609-126"
+     },
+     "Qty": {
+      "text": "140"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "S.A."
+     }
+    },
+    {
+     "Date": {
+      "text": "26/09"
+     },
+     "GRN No.": {
+      "text": "4427"
+     },
+     "Supplier": {
+      "text": "Nayab Labels"
+     },
+     "Item / Description": {
+      "text": "Care labels"
+     },
+     "Lot No.": {
+      "text": "L2609-127"
+     },
+     "Qty": {
+      "text": "9000"
+     },
+     "Unit": {
+      "text": "pcs"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    },
+    {
+     "Date": {
+      "text": "28/09"
+     },
+     "GRN No.": {
+      "text": "4428"
+     },
+     "Supplier": {
+      "text": "Taraz Poly"
+     },
+     "Item / Description": {
+      "text": "Polybags 12x16 (bundles)"
+     },
+     "Lot No.": {
+      "text": "L2609-128"
+     },
+     "Qty": {
+      "text": "2",
+      "legibility": "illegible",
+      "note": "ink blot over digits"
+     },
+     "Unit": {
+      "text": "bdl"
+     },
+     "Recd by": {
+      "text": "B.H."
+     }
+    }
+   ]
+  }
+ ]
+}

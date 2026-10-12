@@ -59,6 +59,15 @@ def test_parse_handles_fences_and_dict_rows():
         parse_extraction("no json here", "mock", "m", "A")
 
 
+def test_parse_handles_escaped_quotes_in_cells():
+    """A value like 63\\" must not desync the brace scanner."""
+    text = json.dumps({"columns": ["Item", "Qty"],
+                       "rows": [[{"text": 'Grey fabric 63"'}, {"text": "1200"}]],
+                       "rows_visible": 1})
+    ext = parse_extraction(text, "mock", "m", "A")
+    assert ext.rows[0]["Item"].text == 'Grey fabric 63"'
+
+
 def _pages(n=1):
     return [load_pages(f"p{i}.jpg", jpeg_with_exif(50 + i, 40), S)[0] for i in range(n)]
 

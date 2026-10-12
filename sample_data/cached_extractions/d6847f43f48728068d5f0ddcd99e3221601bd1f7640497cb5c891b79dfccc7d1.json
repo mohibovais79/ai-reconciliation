@@ -1,0 +1,1443 @@
+{
+ "created_at": "2026-10-12T19:36:59+00:00",
+ "pass_a": {
+  "page_label": "1",
+  "period_label": "Sep 2026",
+  "columns": [
+   "Date",
+   "GRN No.",
+   "Supplier",
+   "Item / Description",
+   "Lot No.",
+   "Qty",
+   "Unit",
+   "Recd by"
+  ],
+  "rows": [
+   {
+    "Date": {
+     "text": "01/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4401",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Qasr Pkg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Cartons 5-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-001",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "2000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "01/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4402",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Taraz Poly",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Polybags 12x16",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-002",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "25000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "02/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4403",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Zarnab Chem",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Caustic soda flakes",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-003",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "50",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bags",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "03/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4404",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Rehbar Threads",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Thread cones 40/2",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-004",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "600",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "cones",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "04/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4405",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Saahil Pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Wooden pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-005",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "120",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "05/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4406",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Nayab Labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Woven labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-006",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "10000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "07/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4407",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Qasr Pkg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Cartons 3-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-007",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "1500",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "07/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4408",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Zarnab Chem",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "H2O2 50%",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-008",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "40",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "drums",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "08/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4409",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Taraz Poly",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Stretch film",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-009",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "80",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "rolls",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "09/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4410",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Rehbar Threads",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Thread cones 20/2",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-010",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "450",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "cones",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "10/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4411",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Qasr Pkg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Cartons 5-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-011",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "1800",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "11/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4412",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Saahil Pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Wooden pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-012",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "90",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "11/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4413",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Nayab Labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Care labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-013",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "15000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "12/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4414",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Zarnab Chem",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Soda ash",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-014",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "30",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bags",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   }
+  ],
+  "rows_visible": 14,
+  "provider": "gemini",
+  "model": "gemini-2.5-flash",
+  "pass_id": "A"
+ },
+ "pass_b": {
+  "page_label": "1",
+  "period_label": "Sep 2026",
+  "columns": [
+   "Date",
+   "GRN No.",
+   "Supplier",
+   "Item / Description",
+   "Lot No.",
+   "Qty",
+   "Unit",
+   "Recd by"
+  ],
+  "rows": [
+   {
+    "Date": {
+     "text": "01/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4401",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Qasr Pkg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Cartons 5-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-001",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "2000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "01/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4402",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Taraz Poly",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Polybags 12x16",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-002",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "25000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "02/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4403",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Zarnab Chem",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Caustic soda flakes",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-003",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "50",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bags",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "03/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4404",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Rehbar Threads",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Thread cones 40/2",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-004",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "600",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "cones",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "04/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4405",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Saahil Pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Wooden pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-005",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "120",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "05/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4406",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Nayab Labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Woven labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-006",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "10000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "07/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4407",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Qasr Pkg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Cartons 3-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-007",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "1500",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "07/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4408",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Zarnab Chem",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "H2O2 50%",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-008",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "40",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "drums",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "08/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4409",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Taraz Poly",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Stretch film",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-009",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "80",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "rolls",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "09/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4410",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Rehbar Threads",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Thread cones 20/2",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-010",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "450",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "cones",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "10/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4411",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Qasr Pkg",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Cartons 5-ply",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-011",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "1800",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "11/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4412",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Saahil Pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Wooden pallets",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-012",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "90",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "11/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4413",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Nayab Labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Care labels",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-013",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "15000",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "pcs",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "B.H.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   },
+   {
+    "Date": {
+     "text": "12/09",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "GRN No.": {
+     "text": "4414",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Supplier": {
+     "text": "Zarnab Chem",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Item / Description": {
+     "text": "Soda ash",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Lot No.": {
+     "text": "L2609-014",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Qty": {
+     "text": "30",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Unit": {
+     "text": "bags",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    },
+    "Recd by": {
+     "text": "S.A.",
+     "legibility": "clear",
+     "struck_text": null,
+     "note": null
+    }
+   }
+  ],
+  "rows_visible": 14,
+  "provider": "gemini",
+  "model": "gemini-2.5-flash",
+  "pass_id": "B"
+ }
+}

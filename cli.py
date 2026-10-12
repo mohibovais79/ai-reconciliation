@@ -44,6 +44,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--period-year", type=int)
     p.add_argument("--out", type=Path, default=Path("out"))
     a = p.parse_args(argv)
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     setup_logging()
     s = load_settings()
     store = Store(Path(s.app.data_dir) / "recon.sqlite")

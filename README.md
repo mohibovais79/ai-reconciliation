@@ -16,11 +16,13 @@ streamlit run app/streamlit_app.py
 
 **Offline demo (no key):** in the sidebar pick *Offline (cached extraction)*. In step 1, click
 *Use the bundled demo files*, then *Read register pages* (step 2), *Run reconciliation* (step 3)
-and the report (step 4). Headless:
+and the report (step 4). Headless (both replay shipped cached readings, no key needed):
 
 ```bash
 python cli.py --register sample_data/synthetic/register_page1.png \
   --erp sample_data/synthetic/erp_export.xlsx --store sample_data/synthetic/store_sheet.csv
+python cli.py --register sample_data/t4_register_page1.jpg sample_data/t4_register_page2.jpg \
+  --erp sample_data/t4_erp_grn.csv --store sample_data/t4_store_sheet.xlsx --period-year 2026
 ```
 
 The CLI writes `out/` and exits 0 = complete, 2 = items awaiting review, 1 = incomplete/failed.
@@ -54,6 +56,9 @@ lists in config, fuzzy header matching and value patterns. You confirm the mappi
 saved per header fingerprint. `normalize.py` handles dates (detects day/month order, Excel serials,
 year taken from the register's period label), quantities as `Decimal` (Indian grouping, negatives
 in parentheses), unit aliases with safe conversions, key prefixes and supplier legal suffixes.
+Supplier comparison also accepts register shorthand: every token of the shorter name must match
+a token of the longer one by prefix or consonant-abbreviation ("pkg" ~ "packaging"), so
+"Qasr Pkg" equals "QASR PACKAGING (PVT) LTD".
 `extract.py` sends each page to the model twice with different prompts (strict JSON with per-cell
 legibility and crossed-out values), makes one repair retry, and caches by image hash + prompt
 version + provider + model. `match.py` groups rows by key first. Unkeyed rows only get
@@ -107,8 +112,19 @@ output is parsed strictly as data.
   dd-mm dates, one line in lb vs kg elsewhere (converted, so it matches). It runs with zero code changes. Proof ties (24/24 rows). Detected: one
   receipt missing from ERP, the ERP quantity outlier (2 of 3 agree), the blotted register
   quantity sent to review (not guessed), a crossed-out quantity, and a backdated ERP-only entry.
-- **Kestrel sample (`t4_*`):** pending. The files are not in this repo yet. The golden test and
-  `eval_extraction.py` will be added when they are.
+- **Kestrel sample (`t4_*`):** register 28 rows on 2 photos, ERP 28, store 30 — proof ties
+  (86/86 rows). It runs end to end with no key: the real Gemini readings are shipped as
+  cached fixtures, so `--provider offline` replays them. `eval_extraction.py` against the
+  hand-verified transcription (`sample_data/ground_truth_register.json`): **28/28 rows
+  exact, 223/223 fields, 1/1 illegible cells flagged** (gemini-2.5-flash, prompt v2).
+  `tests/test_t4_golden.py` asserts every planted finding is caught by general rules:
+  5 mismatches (ERP lot transposition; ERP date one day off; ERP qty outlier on the
+  cones line; store still showing the crossed-out 60; store unit mislabel on the fabric
+  line — register 1200 yds = ERP 1097.28 m), one receipt missing from ERP, one identical
+  store duplicate, one −5000 return linked to its receipt, one ERP-only entry by an
+  unusual user sent to review, one sequence gap (4429), and the ink-blotted register qty
+  sent to review — read as "2", never guessed. Supplier shorthand in the register
+  ("Qasr Pkg", "Zarnab Chem") is matched to the full names, not reported as noise.
 
 ## Decisions log
 

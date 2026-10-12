@@ -32,7 +32,7 @@ base_url = "https://api.groq.com/openai/v1"
 demo_env = "DEMO_GROQ_API_KEY"
 
 [extraction]
-prompt_version = "v1"
+prompt_version = "v2"
 verification = "second_pass"   # off | second_pass | second_provider
 
 [sources]
@@ -79,6 +79,8 @@ ctn = ["ctn", "ctns", "carton", "cartons", "cs", "case", "cases"]
 box = ["box", "boxes", "bx"]
 roll = ["roll", "rolls"]
 cone = ["cone", "cones"]
+drum = ["drum", "drums", "bbl", "barrel", "barrels"]
+bdl = ["bdl", "bundle", "bundles"]
 m = ["m", "mtr", "mtrs", "meter", "meters", "metre", "metres"]
 yd = ["yd", "yds", "yard", "yards"]
 ft = ["ft", "feet", "foot"]

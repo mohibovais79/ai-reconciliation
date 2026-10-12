@@ -81,6 +81,43 @@ def is_non_receipt(r: SourceRow) -> bool:
     return r.qty is not None and r.qty < 0
 
 
+def _token_match(t: str, u: str) -> bool:
+    """Equal, prefix, or abbreviation ('pkg' ~ 'packaging', 'chem' ~ 'chemical')."""
+    if t == u or t.startswith(u) or u.startswith(t):
+        return True
+    short, long = (t, u) if len(t) <= len(u) else (u, t)
+    return (len(short) >= 3 and len(short) <= len(long) - 2
+            and short[0] == long[0] and _is_subseq(short, long))
+
+
+def _is_subseq(needle: str, hay: str) -> bool:
+    it = iter(hay)
+    return all(c in it for c in needle)
+
+
+def _token_subset_match(a: str, b: str) -> bool:
+    """Every token of the smaller set matches a distinct token in the larger set."""
+    sa, sb = set(a.split()), set(b.split())
+    if not sa or not sb:
+        return False
+    small, large = (sa, sb) if len(sa) <= len(sb) else (sb, sa)
+    used: set[str] = set()
+    for t in small:
+        hit = next((u for u in large - used if _token_match(t, u)), None)
+        if hit is None:
+            return False
+        used.add(hit)
+    return True
+
+
+def supplier_equiv(a: str | None, b: str | None, s: Settings) -> bool:
+    """Two normalised supplier names are the same party (fuzzy or abbreviation)."""
+    if not a or not b:
+        return False
+    return a == b or _token_subset_match(a, b) or \
+        fuzz.token_set_ratio(a, b) >= s.matching.supplier_threshold
+
+
 # ---------- Tier 2 scoring ----------
 
 def pair_score(r: SourceRow, g: Group, s: Settings) -> float:
@@ -91,8 +128,7 @@ def pair_score(r: SourceRow, g: Group, s: Settings) -> float:
         sc = 0.0
         if r.lot and o.lot and r.lot == o.lot:
             sc += 0.35
-        if r.supplier_norm and o.supplier_norm and fuzz.token_set_ratio(
-                r.supplier_norm, o.supplier_norm) >= s.matching.supplier_threshold:
+        if supplier_equiv(r.supplier_norm, o.supplier_norm, s):
             sc += 0.15
         if r.item_norm and o.item_norm and fuzz.token_set_ratio(
                 ocr_fold(r.item_norm, s), ocr_fold(o.item_norm, s)) >= s.matching.item_threshold:
@@ -265,8 +301,7 @@ def _same(f: str, a: SourceRow, b: SourceRow, s: Settings) -> bool | None:
     if f == "supplier":
         if not a.supplier_norm or not b.supplier_norm:
             return None
-        return fuzz.token_set_ratio(a.supplier_norm, b.supplier_norm) >= \
-            s.matching.supplier_threshold
+        return supplier_equiv(a.supplier_norm, b.supplier_norm, s)
     if f == "item":
         if not a.item_norm or not b.item_norm:
             return None
@@ -380,8 +415,7 @@ def flag_suspect_entries(groups: list[Group], rows: list[SourceRow], s: Settings
             if not reasons:
                 continue
             text = "; ".join(reasons)
-            if len(g.sources) == 1 and r.entered_at and r.date and (
-                    r.entered_at.date() - r.date).days > s.thresholds.late_entry_days:
+            if len(g.sources) == 1:
                 r.flags.append(Flag(type=FlagType.SUSPECT_ENTRY,
                                     message=f"only in {src}, {text}. Legitimate?"))
             g.hints.append(f"LATE_OR_BACKDATED: {src} {text}")

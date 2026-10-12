@@ -35,7 +35,8 @@ class GeminiProvider:
     def extract(self, *, image_jpeg: bytes, prompt: str, schema: dict | None,
                 api_key: str, model: str, timeout: float) -> str:
         """Send one page image and the prompt; return the model's text."""
-        gen_cfg: dict = {"responseMimeType": "application/json", "temperature": 0}
+        gen_cfg: dict = {"responseMimeType": "application/json", "temperature": 0,
+                         "maxOutputTokens": 32768}
         payload = {
             "contents": [{"role": "user", "parts": [
                 {"inline_data": {"mime_type": "image/jpeg", "data": b64(image_jpeg)}},
