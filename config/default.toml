@@ -114,7 +114,7 @@ factor = "0.001"
 [mapping.synonyms]
 key = ["grn", "grn no", "grn number", "grn #", "receipt no", "receipt number", "receipt id",
        "doc no", "document no", "voucher no", "mrn", "inward no", "gate entry no", "ref no"]
-date = ["date", "grn date", "receipt date", "received date", "date received", "doc date",
+date = ["date", "dt", "dated", "grn date", "receipt date", "received date", "date received", "doc date",
         "inward date", "receiving date"]
 supplier = ["supplier", "supplier name", "vendor", "vendor name", "party", "party name", "from"]
 item = ["item", "item name", "item description", "description", "material", "material name",

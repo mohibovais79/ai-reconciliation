@@ -122,7 +122,7 @@ class DroppedRow(BaseModel):
     """A file row removed at ingest (blank, repeated header, totals) with the reason."""
 
     source: Source
-    file_row: int
+    row_ref: str                       # "r17" for files, "p2r5" for register pages
     reason: str
     raw: dict[str, Any] = {}
 
