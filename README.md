@@ -35,7 +35,10 @@ Gemini (default), OpenRouter (`:free` vision models) and Groq, all called over p
 points, and free-tier availability changes. *Test connection* reports auth, quota and
 model-not-found problems separately.
 
-- **Demo key:** a server-side env var (`DEMO_GEMINI_API_KEY` etc., see `.env.example`) or a
+- **Demo key:** a server-side env var (`DEMO_GEMINI_API_KEY` etc., see `.env.example`; the
+  shorter `GEMINI_API_KEY` also works). On Streamlit Community Cloud add it under
+  *App settings → Secrets* as `DEMO_GEMINI_API_KEY = "..."`. When it is set, the app uses it
+  by default and the key box is hidden unless the user picks "My own key". Or a
   Streamlit secret. The browser never sees it. Each session is capped at `app.demo_page_cap`
   pages.
 - **Own key:** a password field. It is passed to each provider call as an argument and used only

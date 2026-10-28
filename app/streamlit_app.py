@@ -84,13 +84,16 @@ def session_dir() -> Path:
 def demo_key(provider: str) -> str:
     """Server-side demo key from env or Streamlit secrets; never sent to the browser."""
     env = load_settings().providers.get(provider).demo_env
-    val = os.environ.get(env, "")
-    if not val:
-        try:
-            val = st.secrets.get(env, "")
-        except Exception:
-            val = ""
-    return val
+    for name in (env, env.removeprefix("DEMO_")):        # e.g. DEMO_GEMINI_API_KEY, GEMINI_API_KEY
+        val = os.environ.get(name, "")
+        if not val:
+            try:
+                val = st.secrets.get(name, "")
+            except Exception:
+                val = ""
+        if val:
+            return str(val)
+    return ""
 
 
 def current_key() -> str:
